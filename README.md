@@ -5,8 +5,8 @@ Parse and plot Quantius data.
 ## Getting started
 
 * Clone this repository
-* Install `plotly` with `pip install plotly`
-* Get a Quantius JSON file
+* Install Plotly with `pip install plotly`
+* Get a Quantius JSON file (or use the included sample data in `sampledata.json`)
 
 ## Usage
 
@@ -24,5 +24,7 @@ overlay multiple annotations of the same image.)
 
 # Limits
 
-* Right now, this script only works for images and annotations that are 512px 
-  square.
+* This script only works for images and annotations that are 512px square.
+* This script won't detect multiple annotations for the same image.
+
+These will be fixed soon.
