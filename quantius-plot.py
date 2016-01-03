@@ -115,8 +115,8 @@ def plot_points(shapes, annotation, image_filename):
         # TODO set based on original image dimension
         width=512,
         height=512,
-        paper_bgcolor='#fff',
-        plot_bgcolor='#fff',
+        paper_bgcolor='rgba(0,0,0,0)', # Transparent background
+        plot_bgcolor='rgba(0,0,0,0)',
         # No margins
         margin=go.Margin(
             l=0,
@@ -148,7 +148,7 @@ def plot_points(shapes, annotation, image_filename):
     fig = go.Figure(data=data, layout=layout)
     plot_url = py.image.save_as(
         fig,
-        filename=output_image_dir + '/' + '-plot-' + annotation + '.png'
+        filename=output_image_dir + '/' + image_filename + '-plot-' + annotation + '.png'
     )
 
 def main():
