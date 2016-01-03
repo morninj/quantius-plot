@@ -4,13 +4,13 @@ Parse and plot Quantius data.
 
 ## Getting started
 
-* Clone this repository
-* Install Plotly with `pip install plotly`
-* Get a Quantius JSON file (or use the included sample data in `sampledata.json`)
+* Clone this repository.
+* Install Plotly with `pip install plotly`.
+* Get a Quantius JSON file (or use the included sample data in `sampledata.json`).
 
 ## Usage
 
-    $ python plot.py -f sampledata.json -o imagesfolder
+    $ python quantius-plot.py -f sampledata.json -o imagesfolder
 
 `sampledata.json` is a Quantius data file. It contains an item for each 
 Quantius annotation in the file.
@@ -22,9 +22,10 @@ overlay multiple annotations of the same image.)
 
 `imagesfolder` is the folder where plot images will be stored.
 
-# Limits
+## Limits
 
 * This script only works for images and annotations that are 512px square.
 * This script won't detect multiple annotations for the same image.
+* This script can't handle data from the Quantius crosshair tool.
 
 These will be fixed soon.
