@@ -1,0 +1,16 @@
+{
+    "1": {
+        "raw_data": "[[{\"x\":230,\"y\":250,\"timestamp\":802},{\"x\":236,\"y\":274,\"timestamp\":1193},{\"x\":284,\"y\":271,\"timestamp\":1546},{\"x\":288,\"y\":221,\"timestamp\":1850},{\"x\":246,\"y\":216,\"timestamp\":2186}],[{\"x\":214,\"y\":304,\"timestamp\":3625},{\"x\":243,\"y\":338,\"timestamp\":3930},{\"x\":296,\"y\":337,\"timestamp\":4279},{\"x\":332,\"y\":298,\"timestamp\":4602},{\"x\":335,\"y\":196,\"timestamp\":4946},{\"x\":299,\"y\":167,\"timestamp\":5307},{\"x\":247,\"y\":167,\"timestamp\":5666},{\"x\":200,\"y\":221,\"timestamp\":6011},{\"x\":199,\"y\":319,\"timestamp\":6391}],[{\"x\":242,\"y\":435,\"timestamp\":7884},{\"x\":314,\"y\":420,\"timestamp\":8202},{\"x\":359,\"y\":382,\"timestamp\":8578},{\"x\":380,\"y\":269,\"timestamp\":8921},{\"x\":372,\"y\":172,\"timestamp\":9264},{\"x\":339,\"y\":117,\"timestamp\":9640},{\"x\":231,\"y\":96,\"timestamp\":9977},{\"x\":188,\"y\":95,\"timestamp\":10280},{\"x\":154,\"y\":126,\"timestamp\":10547},{\"x\":138,\"y\":198,\"timestamp\":10845},{\"x\":131,\"y\":257,\"timestamp\":11173},{\"x\":131,\"y\":308,\"timestamp\":11523},{\"x\":146,\"y\":359,\"timestamp\":12004},{\"x\":160,\"y\":381,\"timestamp\":12276},{\"x\":195,\"y\":413,\"timestamp\":12612}]]", 
+        "worker_id": "A2UD2TSE8RXJQO", 
+        "image_filename": "18.png", 
+        "annotation_type": "polygon", 
+        "time_when_completed": "Sun Jan 03 10:06:58 PST 2016"
+    }, 
+    "2": {
+        "raw_data": "[[{\"x\":195,\"y\":218,\"timestamp\":796},{\"x\":226,\"y\":257,\"timestamp\":1027},{\"x\":284,\"y\":251,\"timestamp\":1229},{\"x\":286,\"y\":219,\"timestamp\":1479},{\"x\":264,\"y\":207,\"timestamp\":1763}],[{\"x\":117,\"y\":286,\"timestamp\":3539},{\"x\":134,\"y\":303,\"timestamp\":3702},{\"x\":242,\"y\":347,\"timestamp\":3913},{\"x\":358,\"y\":349,\"timestamp\":4112},{\"x\":397,\"y\":335,\"timestamp\":4296},{\"x\":399,\"y\":342,\"timestamp\":4483},{\"x\":369,\"y\":403,\"timestamp\":4699},{\"x\":188,\"y\":422,\"timestamp\":4899},{\"x\":156,\"y\":412,\"timestamp\":5094},{\"x\":136,\"y\":334,\"timestamp\":5384}]]", 
+        "worker_id": "A2UD2TSE8RXJQO", 
+        "image_filename": "19.png", 
+        "annotation_type": "polygon", 
+        "time_when_completed": "Sun Jan 03 10:07:12 PST 2016"
+    }
+}
