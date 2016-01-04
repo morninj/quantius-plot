@@ -1,16 +1,109 @@
 {
     "1": {
-        "raw_data": "[[{\"x\":230,\"y\":250,\"timestamp\":802},{\"x\":236,\"y\":274,\"timestamp\":1193},{\"x\":284,\"y\":271,\"timestamp\":1546},{\"x\":288,\"y\":221,\"timestamp\":1850},{\"x\":246,\"y\":216,\"timestamp\":2186}],[{\"x\":214,\"y\":304,\"timestamp\":3625},{\"x\":243,\"y\":338,\"timestamp\":3930},{\"x\":296,\"y\":337,\"timestamp\":4279},{\"x\":332,\"y\":298,\"timestamp\":4602},{\"x\":335,\"y\":196,\"timestamp\":4946},{\"x\":299,\"y\":167,\"timestamp\":5307},{\"x\":247,\"y\":167,\"timestamp\":5666},{\"x\":200,\"y\":221,\"timestamp\":6011},{\"x\":199,\"y\":319,\"timestamp\":6391}],[{\"x\":242,\"y\":435,\"timestamp\":7884},{\"x\":314,\"y\":420,\"timestamp\":8202},{\"x\":359,\"y\":382,\"timestamp\":8578},{\"x\":380,\"y\":269,\"timestamp\":8921},{\"x\":372,\"y\":172,\"timestamp\":9264},{\"x\":339,\"y\":117,\"timestamp\":9640},{\"x\":231,\"y\":96,\"timestamp\":9977},{\"x\":188,\"y\":95,\"timestamp\":10280},{\"x\":154,\"y\":126,\"timestamp\":10547},{\"x\":138,\"y\":198,\"timestamp\":10845},{\"x\":131,\"y\":257,\"timestamp\":11173},{\"x\":131,\"y\":308,\"timestamp\":11523},{\"x\":146,\"y\":359,\"timestamp\":12004},{\"x\":160,\"y\":381,\"timestamp\":12276},{\"x\":195,\"y\":413,\"timestamp\":12612}]]", 
+        "raw_data": [
+            [
+                {
+                    "y": 168, 
+                    "x": 110, 
+                    "timestamp": 571
+                }, 
+                {
+                    "y": 247, 
+                    "x": 131, 
+                    "timestamp": 934
+                }, 
+                {
+                    "y": 273, 
+                    "x": 168, 
+                    "timestamp": 1144
+                }, 
+                {
+                    "y": 270, 
+                    "x": 300, 
+                    "timestamp": 1355
+                }, 
+                {
+                    "y": 226, 
+                    "x": 326, 
+                    "timestamp": 1562
+                }, 
+                {
+                    "y": 154, 
+                    "x": 315, 
+                    "timestamp": 1760
+                }, 
+                {
+                    "y": 134, 
+                    "x": 278, 
+                    "timestamp": 1973
+                }, 
+                {
+                    "y": 133, 
+                    "x": 217, 
+                    "timestamp": 2167
+                }, 
+                {
+                    "y": 132, 
+                    "x": 182, 
+                    "timestamp": 2363
+                }, 
+                {
+                    "y": 159, 
+                    "x": 145, 
+                    "timestamp": 2661
+                }
+            ], 
+            [
+                {
+                    "y": 374, 
+                    "x": 170, 
+                    "timestamp": 3817
+                }, 
+                {
+                    "y": 383, 
+                    "x": 193, 
+                    "timestamp": 3997
+                }, 
+                {
+                    "y": 345, 
+                    "x": 265, 
+                    "timestamp": 4170
+                }, 
+                {
+                    "y": 329, 
+                    "x": 327, 
+                    "timestamp": 4341
+                }, 
+                {
+                    "y": 368, 
+                    "x": 359, 
+                    "timestamp": 4520
+                }, 
+                {
+                    "y": 393, 
+                    "x": 345, 
+                    "timestamp": 4699
+                }, 
+                {
+                    "y": 399, 
+                    "x": 313, 
+                    "timestamp": 4872
+                }, 
+                {
+                    "y": 402, 
+                    "x": 256, 
+                    "timestamp": 5066
+                }, 
+                {
+                    "y": 402, 
+                    "x": 197, 
+                    "timestamp": 5295
+                }
+            ]
+        ], 
         "worker_id": "A2UD2TSE8RXJQO", 
-        "image_filename": "18.png", 
+        "image_filename": "S10M0.gif", 
         "annotation_type": "polygon", 
-        "time_when_completed": "Sun Jan 03 10:06:58 PST 2016"
-    }, 
-    "2": {
-        "raw_data": "[[{\"x\":195,\"y\":218,\"timestamp\":796},{\"x\":226,\"y\":257,\"timestamp\":1027},{\"x\":284,\"y\":251,\"timestamp\":1229},{\"x\":286,\"y\":219,\"timestamp\":1479},{\"x\":264,\"y\":207,\"timestamp\":1763}],[{\"x\":117,\"y\":286,\"timestamp\":3539},{\"x\":134,\"y\":303,\"timestamp\":3702},{\"x\":242,\"y\":347,\"timestamp\":3913},{\"x\":358,\"y\":349,\"timestamp\":4112},{\"x\":397,\"y\":335,\"timestamp\":4296},{\"x\":399,\"y\":342,\"timestamp\":4483},{\"x\":369,\"y\":403,\"timestamp\":4699},{\"x\":188,\"y\":422,\"timestamp\":4899},{\"x\":156,\"y\":412,\"timestamp\":5094},{\"x\":136,\"y\":334,\"timestamp\":5384}]]", 
-        "worker_id": "A2UD2TSE8RXJQO", 
-        "image_filename": "19.png", 
-        "annotation_type": "polygon", 
-        "time_when_completed": "Sun Jan 03 10:07:12 PST 2016"
+        "time_when_completed": "Sun Jan 03 20:58:46 PST 2016"
     }
 }
