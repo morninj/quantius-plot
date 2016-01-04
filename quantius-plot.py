@@ -69,7 +69,6 @@ def process_annotations():
             fields['annotation_type'] == 'line' or \
             fields['annotation_type'] == 'multiline':
             # Load polygon data from the raw_shape field in the input JSON file
-            # Polygon data is itself JSON data, so we have to load it as JSON here
             current_shapes = fields['raw_data']
             print '    Number of shapes: %s' % len(current_shapes)
             # Loop through shapes
