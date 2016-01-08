@@ -51,25 +51,25 @@ def process_annotations():
     print '-' * 80
     with open(input_data_file) as f:
         results = json.load(f)
-        # Present the annotations in the order they were created
-        results = collections.OrderedDict(sorted(results.items()))
     # Loop through annotations
-    for annotation, fields in results.iteritems():
+    i = 0
+    for annotation in results:
+        i = i + 1
         # Retrieve the data for each annotation
-        print 'Annotation #%s:' % annotation
-        print '    Image filename: %s' % fields['image_filename']
-        print '    Annotation type: %s' % fields['annotation_type']
-        print '    Worker ID: %s' % fields['worker_id']
-        print '    Time when completed: %s' % fields['time_when_completed']
+        print 'Annotation #%s:' % str(i)
+        print '    Image filename: %s' % annotation['image_filename']
+        print '    Annotation type: %s' % annotation['annotation_type']
+        print '    Worker ID: %s' % annotation['worker_id']
+        print '    Time when completed: %s' % annotation['time_when_completed']
         # Retrieve coordinates for each annotation tool
-        if fields['annotation_type'] == 'count':
-            print 'TODO' # TODO
+        if annotation['annotation_type'] == 'count':
+            print 'TODO' # TODO plot as points, not as shape
         output_shapes = []
-        if fields['annotation_type'] == 'polygon' or \
-            fields['annotation_type'] == 'line' or \
-            fields['annotation_type'] == 'multiline':
+        if annotation['annotation_type'] == 'polygon' or \
+            annotation['annotation_type'] == 'line' or \
+            annotation['annotation_type'] == 'multiline':
             # Load polygon data from the raw_shape field in the input JSON file
-            current_shapes = fields['raw_data']
+            current_shapes = annotation['raw_data']
             print '    Number of shapes: %s' % len(current_shapes)
             # Loop through shapes
             for this_shape in current_shapes:
@@ -80,7 +80,7 @@ def process_annotations():
                     x_coords.append(point['x'])
                     y_coords.append(512 - point['y']) # TODO set based on original image dimension
                 # Close polygons
-                if fields['annotation_type'] == 'polygon':
+                if annotation['annotation_type'] == 'polygon':
                     x_coords.append(x_coords[0])
                     y_coords.append(y_coords[0])
                 # Save this shape
@@ -90,7 +90,7 @@ def process_annotations():
                 }
                 output_shapes.append(output_shape)
         # Plot this annotation
-        plot_points(output_shapes, annotation, fields['image_filename'])
+        plot_points(output_shapes, str(i), annotation['image_filename']) # TODO replace i with incremenet for each filename
 
     print '-' * 80
     print '\n'

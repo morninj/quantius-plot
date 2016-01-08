@@ -1,109 +1,62 @@
-{
-    "1": {
+[
+    {
         "raw_data": [
             [
                 {
-                    "y": 168, 
-                    "x": 110, 
-                    "timestamp": 571
+                    "y": 35, 
+                    "x": 11, 
+                    "timestamp": 27044
                 }, 
                 {
-                    "y": 247, 
-                    "x": 131, 
-                    "timestamp": 934
-                }, 
-                {
-                    "y": 273, 
-                    "x": 168, 
-                    "timestamp": 1144
-                }, 
-                {
-                    "y": 270, 
-                    "x": 300, 
-                    "timestamp": 1355
-                }, 
-                {
-                    "y": 226, 
-                    "x": 326, 
-                    "timestamp": 1562
-                }, 
-                {
-                    "y": 154, 
-                    "x": 315, 
-                    "timestamp": 1760
-                }, 
-                {
-                    "y": 134, 
-                    "x": 278, 
-                    "timestamp": 1973
-                }, 
-                {
-                    "y": 133, 
-                    "x": 217, 
-                    "timestamp": 2167
-                }, 
-                {
-                    "y": 132, 
-                    "x": 182, 
-                    "timestamp": 2363
-                }, 
-                {
-                    "y": 159, 
-                    "x": 145, 
-                    "timestamp": 2661
-                }
-            ], 
-            [
-                {
-                    "y": 374, 
-                    "x": 170, 
-                    "timestamp": 3817
-                }, 
-                {
-                    "y": 383, 
-                    "x": 193, 
-                    "timestamp": 3997
-                }, 
-                {
-                    "y": 345, 
-                    "x": 265, 
-                    "timestamp": 4170
-                }, 
-                {
-                    "y": 329, 
-                    "x": 327, 
-                    "timestamp": 4341
-                }, 
-                {
-                    "y": 368, 
-                    "x": 359, 
-                    "timestamp": 4520
-                }, 
-                {
-                    "y": 393, 
-                    "x": 345, 
-                    "timestamp": 4699
-                }, 
-                {
-                    "y": 399, 
-                    "x": 313, 
-                    "timestamp": 4872
-                }, 
-                {
-                    "y": 402, 
-                    "x": 256, 
-                    "timestamp": 5066
-                }, 
-                {
-                    "y": 402, 
-                    "x": 197, 
-                    "timestamp": 5295
+                    "y": 42, 
+                    "x": 69, 
+                    "timestamp": 28653
                 }
             ]
         ], 
-        "worker_id": "A2UD2TSE8RXJQO", 
-        "image_filename": "S10M0.gif", 
-        "annotation_type": "polygon", 
-        "time_when_completed": "Sun Jan 03 20:58:46 PST 2016"
+        "worker_id": "A1P91W2Q05K7AC", 
+        "image_filename": "10.png", 
+        "annotation_type": "multiline", 
+        "time_when_completed": "Wed Jan 06 18:22:13 PST 2016"
+    }, 
+    {
+        "raw_data": [
+            [
+                {
+                    "y": 37, 
+                    "x": 15, 
+                    "timestamp": 31834
+                }, 
+                {
+                    "y": 43, 
+                    "x": 68, 
+                    "timestamp": 32740
+                }
+            ]
+        ], 
+        "worker_id": "A1P91W2Q05K7AC", 
+        "image_filename": "11.png", 
+        "annotation_type": "multiline", 
+        "time_when_completed": "Wed Jan 06 18:22:13 PST 2016"
+    }, 
+    {
+        "raw_data": [
+            [
+                {
+                    "y": 35, 
+                    "x": 15, 
+                    "timestamp": 36098
+                }, 
+                {
+                    "y": 42, 
+                    "x": 67, 
+                    "timestamp": 36925
+                }
+            ]
+        ], 
+        "worker_id": "A1P91W2Q05K7AC", 
+        "image_filename": "12.png", 
+        "annotation_type": "multiline", 
+        "time_when_completed": "Wed Jan 06 18:22:13 PST 2016"
     }
-}
+]
