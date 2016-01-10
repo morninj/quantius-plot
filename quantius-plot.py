@@ -67,7 +67,8 @@ def process_annotations():
         output_shapes = []
         if annotation['annotation_type'] == 'polygon' or \
             annotation['annotation_type'] == 'line' or \
-            annotation['annotation_type'] == 'multiline':
+            annotation['annotation_type'] == 'multiline' or \
+            annotation['annotation_type'] == 'crosshairs': # TODO plot crosshairs as points, not shape
             # Load polygon data from the raw_shape field in the input JSON file
             current_shapes = annotation['raw_data']
             print '    Number of shapes: %s' % len(current_shapes)
