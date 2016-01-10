@@ -3,60 +3,50 @@
         "raw_data": [
             [
                 {
-                    "y": 35, 
-                    "x": 11, 
-                    "timestamp": 27044
+                    "y": 107, 
+                    "x": 62, 
+                    "timestamp": 3756
                 }, 
                 {
-                    "y": 42, 
-                    "x": 69, 
-                    "timestamp": 28653
+                    "y": 185, 
+                    "x": 95, 
+                    "timestamp": 4124
+                }, 
+                {
+                    "y": 102, 
+                    "x": 148, 
+                    "timestamp": 4544
                 }
             ]
         ], 
         "worker_id": "A1P91W2Q05K7AC", 
-        "image_filename": "10.png", 
-        "annotation_type": "multiline", 
-        "time_when_completed": "Wed Jan 06 18:22:13 PST 2016"
+        "image_filename": "S10M0.gif", 
+        "annotation_type": "polygon", 
+        "time_when_completed": "Sun Jan 10 09:04:14 PST 2016"
     }, 
     {
         "raw_data": [
             [
                 {
-                    "y": 37, 
-                    "x": 15, 
-                    "timestamp": 31834
+                    "y": 352, 
+                    "x": 220, 
+                    "timestamp": 1030
                 }, 
                 {
-                    "y": 43, 
-                    "x": 68, 
-                    "timestamp": 32740
+                    "y": 178, 
+                    "x": 271, 
+                    "timestamp": 1497
+                }, 
+                {
+                    "y": 309, 
+                    "x": 368, 
+                    "timestamp": 1959
                 }
             ]
         ], 
         "worker_id": "A1P91W2Q05K7AC", 
-        "image_filename": "11.png", 
-        "annotation_type": "multiline", 
-        "time_when_completed": "Wed Jan 06 18:22:13 PST 2016"
-    }, 
-    {
-        "raw_data": [
-            [
-                {
-                    "y": 35, 
-                    "x": 15, 
-                    "timestamp": 36098
-                }, 
-                {
-                    "y": 42, 
-                    "x": 67, 
-                    "timestamp": 36925
-                }
-            ]
-        ], 
-        "worker_id": "A1P91W2Q05K7AC", 
-        "image_filename": "12.png", 
-        "annotation_type": "multiline", 
-        "time_when_completed": "Wed Jan 06 18:22:13 PST 2016"
+        "image_filename": "S10M1.gif", 
+        "annotation_type": "polygon", 
+        "time_when_completed": "Sun Jan 10 09:04:24 PST 2016"
     }
 ]
