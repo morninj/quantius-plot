@@ -56,6 +56,8 @@ def process_annotations():
     i = 0
     # Set up csv output # TODO improve
     csv_output = []
+    filename_keys = {} # assign a unique integer to each unique filename
+    worker_id_keys = {}
     for annotation in results:
         i = i + 1
         # Retrieve the data for each annotation
@@ -84,9 +86,15 @@ def process_annotations():
                     x_coords.append(point['x'])
                     y_coords.append(512 - point['y']) # TODO set based on original image dimension
                     # TODO improve:
+                    if not annotation['image_filename'] in filename_keys:
+                        filename_keys[annotation['image_filename']] = len(filename_keys) + 1
+                    if not annotation['worker_id'] in worker_id_keys:
+                        worker_id_keys[annotation['worker_id']] = len(worker_id_keys) + 1
                     csv_output.append([
                         annotation['image_filename'],
                         annotation['worker_id'],
+                        filename_keys[annotation['image_filename']],
+                        worker_id_keys[annotation['worker_id']],
                         point['x'],
                         point['y'],
                     ])
@@ -105,6 +113,7 @@ def process_annotations():
     # Write CSV TODO improve
     with open('output.csv', 'w') as fp:
         a = csv.writer(fp, delimiter=',')
+        a.writerow(['filename', 'worker_id', 'filename_key', 'worker_id_key', 'x', 'y'])
         a.writerows(csv_output)
     print '-' * 80
     print '\n'
