@@ -5,6 +5,7 @@ import plotly.plotly as py
 import plotly.graph_objs as go
 import subprocess
 import argparse
+import csv
 
 # Get command line arguments
 parser = argparse.ArgumentParser(description='Parse and plot Quantius data')
@@ -53,6 +54,8 @@ def process_annotations():
         results = json.load(f)
     # Loop through annotations
     i = 0
+    # Set up csv output # TODO improve
+    csv_output = []
     for annotation in results:
         i = i + 1
         # Retrieve the data for each annotation
@@ -80,6 +83,13 @@ def process_annotations():
                 for point in this_shape:
                     x_coords.append(point['x'])
                     y_coords.append(512 - point['y']) # TODO set based on original image dimension
+                    # TODO improve:
+                    csv_output.append([
+                        annotation['image_filename'],
+                        annotation['worker_id'],
+                        point['x'],
+                        point['y'],
+                    ])
                 # Close polygons
                 if annotation['annotation_type'] == 'polygon':
                     x_coords.append(x_coords[0])
@@ -91,14 +101,17 @@ def process_annotations():
                 }
                 output_shapes.append(output_shape)
         # Plot this annotation
-        plot_points(output_shapes, str(i), annotation['image_filename']) # TODO replace i with incremenet for each filename
-
+        plot_points(output_shapes, str(i), annotation['worker_id'], annotation['image_filename']) # TODO replace i with incremenet for each filename
+    # Write CSV TODO improve
+    with open('output.csv', 'w') as fp:
+        a = csv.writer(fp, delimiter=',')
+        a.writerows(csv_output)
     print '-' * 80
     print '\n'
     print 'Done. Images stored in the %s/ folder.' % output_image_dir
 
 # Plot data with Plotly
-def plot_points(shapes, annotation, image_filename):
+def plot_points(shapes, annotation, image_filename, worker_id):
     '''Plot points with Plotly. '''
     data = []
     # Add each shape to the data list
@@ -148,7 +161,7 @@ def plot_points(shapes, annotation, image_filename):
     fig = go.Figure(data=data, layout=layout)
     plot_url = py.image.save_as(
         fig,
-        filename=output_image_dir + '/' + image_filename + '-plot-' + annotation + '.png'
+        filename=output_image_dir + '/' + worker_id + '-' + image_filename + '-plot-' + annotation + '.png'
     )
 
 def main():
