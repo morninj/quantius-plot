@@ -58,6 +58,7 @@ def process_annotations():
     csv_output = []
     filename_keys = {} # assign a unique integer to each unique filename
     worker_id_keys = {}
+    curr_shape = 0
     for annotation in results:
         i = i + 1
         # Retrieve the data for each annotation
@@ -79,6 +80,7 @@ def process_annotations():
             print '    Number of shapes: %s' % len(current_shapes)
             # Loop through shapes
             for this_shape in current_shapes:
+                curr_shape = curr_shape + 1
                 x_coords = []
                 y_coords = []
                 # Loop through points in the current shape
@@ -95,6 +97,7 @@ def process_annotations():
                         annotation['worker_id'],
                         filename_keys[annotation['image_filename']],
                         worker_id_keys[annotation['worker_id']],
+                        curr_shape,
                         point['x'],
                         point['y'],
                     ])
@@ -113,7 +116,7 @@ def process_annotations():
     # Write CSV TODO improve
     with open('output.csv', 'w') as fp:
         a = csv.writer(fp, delimiter=',')
-        a.writerow(['filename', 'worker_id', 'filename_key', 'worker_id_key', 'x', 'y'])
+        a.writerow(['filename', 'worker_id', 'filename_key', 'worker_id_key', 'shape_id (for non-crosshair tools)', 'x', 'y'])
         a.writerows(csv_output)
     print '-' * 80
     print '\n'
